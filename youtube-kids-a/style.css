@@ -2,18 +2,17 @@
 .search-videos-input {
     border-radius: 100px;
     border-style: none;
-    background-color: lightgray;
-    padding: 10px 20px;
+    background-color: rgb(244, 244, 244);
+    padding: 20px 34px;
     color: rgb(80, 80, 80);
     border-radius: 100px 0px 0px 100px;
-    width: 50%;
-    max-width: 500px;
+    width: 40%;
+    min-width: 300px;
+    font-size: 18px;
 }
 
-.search-vi
-deos-input::placeholder {
-    color: rgb(122, 122, 122);
-
+.search-videos-input::placeholder {
+    color: rgb(157, 157, 157);
 }
 
 input:focus {
@@ -22,7 +21,7 @@ input:focus {
 
 .search-btn {
     border: none;
-    background-color: rgb(114, 114, 253);
+    background-color: rgb(46, 95, 216);
     padding: 15px 25px 15px 15px;
     border-radius: 0px 40px 40px 0px;
     margin-left: -10px;
@@ -38,4 +37,68 @@ input:focus {
     width: 100%;
     flex-direction: row;
     justify-content: center;
+    margin-top: 40px;
+}
+
+.category-img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.category-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.category-div:hover {
+    transform: scale(1.2);
+}
+
+.category-desc-span {
+    color: rgb(217, 10, 23);
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.categories-div {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.videos-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.video-div:hover {
+    transform: scale(1.05);
+}
+
+.video-img {
+    width: 100%;
+}
+
+.video-div {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease-in-out;
+}
+
+.video-title-p {
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
