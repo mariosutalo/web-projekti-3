@@ -132,6 +132,23 @@ input:focus {
     padding: 10px;
 }
 
+.mobile-menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-menu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.menu-btn {
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
     .videos-div {
@@ -140,12 +157,28 @@ input:focus {
         margin-top: 20px;
     }
     .categories-div {
-        display: none;
+        position: absolute;
+        top: 40px;
+        transform: scale(0);
+        z-index: 120;
+        flex-direction: column;
+        gap: 40px;
+        background-color: white;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .categories-div.open {
+        transform: scale(1);
     }
 
     .search-videos-input {
         min-width: 0px;
         flex: 1;
+    }
+
+    .menu-btn {
+        display: block;
     }
 
 }
