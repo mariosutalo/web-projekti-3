@@ -1,3 +1,27 @@
+@font-face {
+    font-family: yt kids;
+    src: url(fonts/YouTubeSansRegular.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.woff);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Thin.ttf);
+    font-weight: 100;
+}
+
+/* body {
+    font-family: "DancingScript-Regular", Arial, Helvetica, sans-serif;
+} */
+
+body {
+    font-family: yt kids;
+}
+
 .search-videos-input {
     border-radius: 100px;
     border-style: none;
@@ -101,6 +125,8 @@ input:focus {
     font-size: 18px;
     font-weight: 500;
     flex: 1;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 .video-duration-span {
