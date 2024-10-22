@@ -213,7 +213,7 @@ body {
     }
 
     .video-categories-div {
-        flex-direction: column;
+        display: none;
     }
 
     .left-bg-div,
@@ -223,6 +223,11 @@ body {
 
     .menu-btn {
         display: inline-block;
+    }
+
+    .toggle-video-categories-div {
+        display: flex;
+        flex-direction: column;
     }
 }
 
