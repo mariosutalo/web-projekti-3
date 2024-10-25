@@ -1,0 +1,37 @@
+.logo-img {
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.menu-ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-ul li {
+    margin-right: 10px;
+}
+
+.menu-ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu-ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+
+.menu-items-container-div {
+    display: flex;
+    border-bottom: 1px solid rgb(90, 90, 90);
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+
+}
