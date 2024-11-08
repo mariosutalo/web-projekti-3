@@ -27,10 +27,18 @@
                         <a href="#">About</a>
                     </li>
                 </ul>
+                <button class="menu-btn" onclick="toggleMenu()">
+                    <img src="images/hamburger icon.png" alt="" class="menu-img">
+                </button>
             </div>
-
         </nav>
     </header>
+    <script>
+        function toggleMenu() {
+            const menuUl = document.querySelector('.menu-ul')
+            menuUl.classList.toggle('menu-ul-visible')
+        }
+    </script>
 </body>
 
 </html>
