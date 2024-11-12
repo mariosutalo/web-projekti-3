@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <form action="">
+        <input type="text" name="firstname" id="">
+        <input type="submit" value="Submit now">
+    </form> -->
+  <!-- <form action="">
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <label for="telephone">Telephone:</label>
+            <input type="text" id="telephone"> 
+
+            <label for="user-email">Email:</label>
+            <input type="text" id="user-email">
+        </fieldset>
+        <fieldset>
+            <legend>User info</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            
+            <label for="password">Password:</label>
+            <input type="password" size="35" maxlength="140" id="password">
+        </fieldset>
+    </form> -->
+  <!-- <form action="mailto:your@email.com" method="post">
+        First name: <input type="text" name="firstname" /> 
+        Surname: <input type="text" name="surname" />
+        <input type="submit" value="Submit now" />
+    </form> -->
+  <!-- <form action="/login" method="post">
+        First name: <input type="text" name="firstname" /> 
+        Password: <input type="password" name="password"/>
+        <input type="submit" value="Submit now" />
+    </form> -->
+  <!-- <form method="post">
+        <textarea cols="25" rows="7"></textarea> 
+        <br />
+        <input type="submit" value="Submit now" />
+    </form> -->
+  <!-- <form method="get" action="/Tests/Post">
+        <fieldset>
+            <legend>What is Your Favorite Pet?</legend>
+            <input type="radio" name="favorite_pet" value="Cats">Cats<br>
+            <input type="radio" name="favorite_pet" value="Dogs" checked>Dogs<br>
+            <input type="radio" name="favorite_pet" value="Birds">Birds<br>
+            <br>
+            <input type="submit" value="Submit now">
+        </fieldset>
+    </form> -->
+  <!-- <form action="">
+    <input type="radio" name="favorite_pet" value="Cats" checked id="cats">
+    <label for="cats">Cats</label>
+    <br>
+    <input type="radio" name="favorite_pet" value="Dogs" id="dogs">
+    <label for="dogs">Dogs</label>
+  </form> -->
+
+  <form method="post" action="/Tests/Post" onsubmit="return ValidateForm();">
+    <fieldset>
+    <legend>What is Your Favorite Pet?</legend>
+    <input type="radio" name="favorite_pet" value="Cats" checked>Cats<br>
+    <input type="radio" name="favorite_pet" value="Dogs">Dogs<br>
+    <input type="radio" name="favorite_pet" value="Birds">Birds<br>
+        <br>
+    <input type="submit" value="Submit now">
+    </fieldset>
+</form>
+
+<script type="text/javascript">
+function ValidateForm()
+{
+    var radioButtons = document.getElementsByName("favorite_pet");
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked == true)
+        {
+            if(confirm("You have selected " + radioButtons[i].value + " as your favorite pet. Is that correct?"))
+                return true;
+            else
+                return false;
+        }
+    }
+}
+</script>
+</body>
+
+</html>
