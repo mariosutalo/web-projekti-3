@@ -30,10 +30,10 @@
             <input type="text" id="username">
             
             <label for="password">Password:</label>
-            <input type="password" size="35" maxlength="140" id="password">
+            <input size="35" maxlength="140" id="password">
         </fieldset>
     </form> -->
-  <!-- <form action="mailto:your@email.com" method="post">
+  <!-- <form action="./login" method="get">
         First name: <input type="text" name="firstname" /> 
         Surname: <input type="text" name="surname" />
         <input type="submit" value="Submit now" />
@@ -43,7 +43,7 @@
         Password: <input type="password" name="password"/>
         <input type="submit" value="Submit now" />
     </form> -->
-  <!-- <form method="post">
+  <!-- <form method="post" action=".send">
         <textarea cols="25" rows="7"></textarea> 
         <br />
         <input type="submit" value="Submit now" />
@@ -52,8 +52,8 @@
         <fieldset>
             <legend>What is Your Favorite Pet?</legend>
             <input type="radio" name="favorite_pet" value="Cats">Cats<br>
-            <input type="radio" name="favorite_pet" value="Dogs" checked>Dogs<br>
-            <input type="radio" name="favorite_pet" value="Birds">Birds<br>
+            <input type="radio" name="favorite_pet" value="Dogs">Dogs<br>
+            <input type="radio" name="favorite_pet" value="Birds" checked>Birds<br>
             <br>
             <input type="submit" value="Submit now">
         </fieldset>
@@ -66,7 +66,7 @@
     <label for="dogs">Dogs</label>
   </form> -->
 
-  <form method="post" action="/Tests/Post" onsubmit="return ValidateForm();">
+  <!-- <form method="post" action="/Tests/Post" onsubmit="return ValidateForm();">
     <fieldset>
     <legend>What is Your Favorite Pet?</legend>
     <input type="radio" name="favorite_pet" value="Cats" checked>Cats<br>
@@ -92,7 +92,18 @@ function ValidateForm()
         }
     }
 }
-</script>
+</script> -->
+
+<form method="get" action="/Tests/Post/">      
+  <fieldset>      
+      <legend>What is Your Favorite Pet?</legend>      
+      <input type="checkbox" name="favorite_pet" value="Cats">Cats<br>      
+      <input type="checkbox" name="favorite_pet" value="Dogs">Dogs<br>      
+      <input type="checkbox" name="favorite_pet" value="Birds">Birds<br>      
+      <br>      
+      <input type="submit" value="Submit now" />      
+  </fieldset>      
+</form>
 </body>
 
 </html>
