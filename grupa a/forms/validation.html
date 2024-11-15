@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .help {
+      display: none;
+      font-size: 90%;
+    }
+
+    input:focus + .help {
+      display: inline-block;
+    }
+
+    input:invalid + .help {
+        color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="name">Name (required):</label>
+  <input type="text" id="name" name="name" value="" required>
+  <span>hello</span>
+  <span id="name-format" class="help">Format: firstname lastname</span>
+</body>
+
+</html>
