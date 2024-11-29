@@ -49,3 +49,8 @@
     color: white;
 }
 
+.register-form input:invalid {
+    border: 1px solid;
+    border-color: red;
+}
+
