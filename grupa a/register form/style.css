@@ -47,10 +47,20 @@
 .register-form input[type="submit"] {
     background-color: orange;
     color: white;
+    margin-top: 10px;
+}
+
+.register-form input[type="radio"] {
+    box-shadow: none;
+    accent-color: orange;
 }
 
 .register-form input:invalid {
     border: 1px solid;
     border-color: red;
+}
+
+.register-form span {
+    font-size: 12px;
 }
 
