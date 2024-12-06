@@ -19,7 +19,14 @@
    gap: 10px;
 }
 
-.login-form input {
+.login-form input[type="text"], input[type="password"], input[type="email"] {
     flex: 1;
 }
+
+.login-form input[type="submit"] {
+    align-self: flex-start;
+}
+
+
+
 
