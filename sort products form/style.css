@@ -8,7 +8,6 @@
 }
 
 .sort_form select {
-    /* background: url(arrow_down.webp) center right no-repeat; */
     border: 0;
     color: var(--blue);
     margin-right: 20px;
@@ -30,10 +29,7 @@
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    /* user-select: none; */
   }
   
   /* Hide the browser's default checkbox */
@@ -46,7 +42,7 @@
   }
   
   /* Create a custom checkbox */
-  .checkmark {
+  .checkmark-span {
     position: absolute;
     top: 0;
     left: 0;
@@ -56,29 +52,29 @@
   }
   
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .container:hover input ~ .checkmark-span {
     background-color: #ccc;
   }
   
   /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .container input:checked ~ .checkmark-span {
     background-color: #2196F3;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  .checkmark-span:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+  .container input:checked ~ .checkmark-span:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
-  .container .checkmark:after {
+  .container .checkmark-span:after {
     left: 9px;
     top: 5px;
     width: 5px;

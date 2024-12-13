@@ -1,0 +1,67 @@
+:root {
+    --dark: #343a40;
+    --blue: rgb(59, 204, 248);
+    --font-text: 16px;
+    --font-family: "Arial, Helvetica, sans-serif"
+}
+
+.sort-products-form {
+    font-size: var(--font-text);
+    font-family: var(--font-family);
+}
+
+
+
+.sort-products-form select {
+    color: var(--blue);
+    border: none;
+    font-size: var(--font-text);
+    font-family: var(--font-family);
+}
+
+.sort-products-form select:focus {
+    outline: none;
+}
+
+.sort-products-form span {
+    color: var(--dark);
+}
+
+.container-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* Hide the browser's default checkbox */
+.container-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-label:hover input~.checkmark-span {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-label input:checked~.checkmark-span {
+    background-color: #2196F3;
+}
+
