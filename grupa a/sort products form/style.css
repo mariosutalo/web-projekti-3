@@ -1,0 +1,81 @@
+:root {
+    --dark: #343a40;
+    --blue: rgb(59, 204, 248);
+}
+
+.sort-form {
+    font-family: monospace;
+    min-height: 3000px;
+}
+
+.sort-form select {
+    color: var(--blue);
+    font-family: monospace;
+    border: none;
+}
+
+.sort-form select:focus {
+    outline: 1px solid var(--dark);
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark-span {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark-span {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark-span:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+/* create white box and rotate it by 45 degrees */
+.container .checkmark-span:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
