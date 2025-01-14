@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-div">
+    <header>
+      <img src="assets/site logo.png" alt="pc web shop logo" class="site-logo-img">
+      <ul class="menu-ul">
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <div class="header-buttons-div">
+        <button class="login-btn rounded-btn">
+          <img src="assets/user login.png" alt="">
+        </button>
+        <button class="shopping-cart-btn rounded-btn">
+          <img src="assets/shopping cart.png" alt="">
+          <span>2</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="filter-products-div">
+        <form action="filter_products" method="get">
+          <label class="container" for="gaming">Gaming
+            <input type="checkbox" id="gaming" name="category" value="gaming">
+            <span class="checkmark-span"></span>
+          </label>
+          <label class="container" for="office">Office
+            <input type="checkbox" id="office" name="category" value="office">
+            <span class="checkmark-span"></span>
+          </label>
+        </form>
+      </div>
+      <div class="products-div">
+        <div class="sort-products-div">
+          <form action="sort_products" class="sort-form">
+            <label for="sort-options">Sort By</label>
+            <select name="sort_by" id="sort-options">
+              <option value="name_asc">Name A - Z</option>
+              <option value="name_desc">Name A - Z</option>
+              <option value="price_asc">Lowest Price</option>
+              <option value="price_desc">Highest Price</option>
+              <option value="newest">Newest</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
