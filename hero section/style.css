@@ -29,6 +29,7 @@
   
   .hero-content {
     width: 1124px;
+    /* flex: 1 1 1124px; */
     background-color: rebeccapurple;
   }
   
