@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    min-height: 500px;
+    background-image: url("hero section pc shop.jpg"); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    color: white; /* Text color */
+    padding: 0 20px; /* Add padding for smaller screens */
+    flex-wrap: wrap;
+  }
+  
+  .hero-content {
+    width: 1124px;
+    background-color: rebeccapurple;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .hero-content button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 12px 20px;
+    color: white;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hero-content button:hover {
+    transform: scale(1.1);
+  }
