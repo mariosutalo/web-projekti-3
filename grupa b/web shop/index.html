@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/site logo.png" alt="" class="header-logo-img">
+        <nav>
+            <ul class="menu-ul">
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Log In</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-btns-div">
+            <button class="rounded-image-btn">
+                <img src="assets/user icon.png" alt="">
+            </button>
+            <button class="rounded-image-btn shopping-cart-btn">
+                <img src="assets/cart icon.png" alt="">
+                <span>4</span>
+            </button>
+        </div>
+    </header>
+    <div class="page-content-div">
+        <div class="filter-div">
+            <form action="" class="filter-form">
+                <label class="filter-checkbox-label-container" for="gaming">Gaming
+                    <input type="checkbox" id="gaming" name="category" value="gaming">
+                    <span class="checkmark-span"></span>
+                </label>
+                <label class="filter-checkbox-label-container" for="office">Office
+                    <input type="checkbox" id="office" name="category" value="office">
+                    <span class="checkmark-span"></span>
+                </label>
+            </form>        
+        </div>
+        <div class="products-div">
+            <form action="sort_products" class="sort-form">
+                <label for="sort-options">Sort By</label>
+                <select name="sort_by" id="sort-options">
+                    <option value="name_asc">Name A - Z</option>
+                    <option value="name_desc">Name A - Z</option>
+                    <option value="price_asc">Lowest Price</option>
+                    <option value="price_desc">Highest Price</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>
