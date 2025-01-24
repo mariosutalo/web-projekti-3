@@ -173,3 +173,56 @@ footer > p {
     text-align: center;
 }
 
+.products-grid-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.product-card-img {
+    width: 100%;
+}
+
+.product-rating-div > img {
+    width: 20px;
+    height: 20px;
+}
+
+.product-rating-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-card-div ul {
+    padding-inline-start: 20px;
+}
+
+.discount-heart-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-heart-div > img {
+    width: 30px;
+    height: 30px;
+}
+
+.product-card-div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.discount-heart-div > span {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+}
+
+
+
+
+
