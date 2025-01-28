@@ -1,0 +1,31 @@
+/* General pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Pagination links */
+  .pagination a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Active page */
+  .pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Hover effect */
+  .pagination a:hover:not(.active) {
+    background-color: #f1f1f1;
+    color: #007bff;
+  }
