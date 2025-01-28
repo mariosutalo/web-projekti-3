@@ -1,5 +1,15 @@
+:root {
+  --primary-color: rgb(190, 50, 121);
+  --primary: calc(16rem/16);
+  --2px: calc(2rem/16);
+}
+
+/* html {
+  font-size: 0.625rem;
+} */
+
 /* General pagination container */
-.pagination {
+.pagination-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,25 +17,26 @@
   }
   
   /* Pagination links */
-  .pagination a {
-    color: #007bff;
+  .pagination-div a {
+    color: var(--primary-color);
     text-decoration: none;
     padding: 8px 16px;
     margin: 0 4px;
     border: 1px solid #ddd;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
+    font-size: var(--2px);
   }
   
   /* Active page */
-  .pagination a.active {
-    background-color: #007bff;
+  .pagination-div a.active {
+    background-color: var(--primary-color);
     color: #fff;
-    border-color: #007bff;
+    border-color: var(--primary-color);
   }
   
   /* Hover effect */
-  .pagination a:hover:not(.active) {
+  .pagination-div a:hover:not(.active) {
     background-color: #f1f1f1;
-    color: #007bff;
+    color: var(--primary-color);
   }
