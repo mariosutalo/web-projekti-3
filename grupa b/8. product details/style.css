@@ -1,0 +1,32 @@
+.product-details-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.product-img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.add-to-cart-btn > img {
+    width: 20px;
+    height: 20px;
+}
+
+.section-div {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price-info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-to-cart-div {
+    display: inline-block;
+}
