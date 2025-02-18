@@ -1,0 +1,11 @@
+px vs rem article: https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/
+css variable - product details
+rem - product details
+media queries: responsive menu
+web shop header
+product details
+
+zadatak će otprilike biti: header + product details
+
+
+
