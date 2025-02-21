@@ -45,7 +45,7 @@
 }
 
 .section-div {
-    width: 1200px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,6 +131,16 @@
     align-items: center;
     gap: 10px;
     font-family: var(--primary-font);
+}
+
+@media only screen and (max-width: 600px) {
+    .product-details-div {
+        grid-template-columns: 1fr;
+    }
+
+    .section-div {
+        width: 100%;
+    }
 }
 
 
