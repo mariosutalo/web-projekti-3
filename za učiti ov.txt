@@ -5,7 +5,7 @@ media queries: responsive menu
 web shop header
 product details
 
-zadatak će otprilike biti: header + product details
+zadatak će biti: header + product details
 
 
 
