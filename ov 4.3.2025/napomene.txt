@@ -1,0 +1,3 @@
+koristiti remove za velicine fontova
+koristiti media queries - samo za mobile i desktop
+ubaciti custom font po želji
